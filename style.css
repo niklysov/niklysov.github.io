@@ -14,10 +14,15 @@ body {
   padding-right: 10px;
 }
 
-.contacts {
+.misc {
   display: flex;
-  flex-direction: column;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.misc > * {
+  margin-right: 10px;
 }
 
 a:link {
