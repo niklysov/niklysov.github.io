@@ -56,7 +56,7 @@ a:active {
   padding-bottom: 20px;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1200px) {
   .entry {
     grid-template-areas:   
     "name"
