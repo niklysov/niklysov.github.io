@@ -1,0 +1,126 @@
+body { 
+  width:55%;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.outline {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+a:link {
+  color: rgb(54, 54, 54);
+}
+
+a:visited {
+  color: rgb(54, 54, 54);
+}
+
+a:hover {
+  color: rgb(141, 141, 141);
+}
+
+a:active {
+  color: rgb(54, 54, 54);
+}
+
+.entries {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  display: grid;
+  grid-template-areas: 
+  "period name"
+  "location role"
+  ". description";
+  grid-template-columns: 1fr 4fr;
+  padding-bottom: 20px;
+}
+
+@media(max-width: 900px) {
+  .entry {
+    grid-template-areas:   
+    "name"
+    "role"
+    "period"
+    "location"
+    "description";
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    width:100%;
+  }
+}
+
+.entry > div.period {
+  grid-area: period;
+  color: gray;
+  font-weight: 400;
+  font-size: 11pt;
+  padding-right: 5px;
+}
+
+.entry > div.location {
+  grid-area: location;
+  color: gray;
+  font-weight: 300;
+  font-size: 11pt;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+
+.entry > div.name {
+  grid-area: name;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.entry > div.role {
+  grid-area: role;
+  padding-bottom: 10px;
+}
+
+.entry > div.description {
+  grid-area: description;
+}
+
+.skills-bar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-bar > * {
+  text-align: center;
+  border-radius: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.skill-major {
+  background-color: rgb(230, 230, 230);
+  color: rgb(30, 30, 30);
+}
+
+.skill-minor {
+  background-color: rgb(245, 245, 245);
+  color: rgb(145, 145, 145);
+}
