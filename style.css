@@ -51,7 +51,8 @@ a:active {
   grid-template-areas: 
   "period name"
   "location role"
-  ". description";
+  ". description"
+  ". skills";
   grid-template-columns: 1fr 4fr;
   padding-bottom: 20px;
 }
@@ -63,7 +64,8 @@ a:active {
     "role"
     "period"
     "location"
-    "description";
+    "description"
+    "skills";
     grid-template-columns: 1fr;
   }
 
@@ -98,10 +100,16 @@ a:active {
 .entry > div.role {
   grid-area: role;
   padding-bottom: 10px;
+  font-weight: 400;
 }
 
 .entry > div.description {
   grid-area: description;
+}
+
+.entry > div.skills {
+  grid-area: skills;
+  font-size: 10pt;
 }
 
 .skills-bar {
@@ -126,6 +134,6 @@ a:active {
 }
 
 .skill-minor {
-  background-color: rgb(245, 245, 245);
-  color: rgb(145, 145, 145);
+  background-color: rgb(240, 240, 240);
+  color: rgb(100, 100, 100);
 }
